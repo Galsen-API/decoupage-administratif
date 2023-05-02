@@ -8,7 +8,6 @@ app.use(express.json());
 app.use(cors());
 app.use('/api', api);
 
-
 const port = 3000;
 const server = createServer(app);
 server.listen(port, () => {

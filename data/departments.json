@@ -22,5 +22,9 @@
     {
         "name" : "Mbour",
         "region_code" : 10
+    },
+    {
+        "name" : "Diourbel",
+        "region_code" : 2
     }
 ]
