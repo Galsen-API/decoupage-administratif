@@ -1,5 +1,7 @@
 import express from 'express';
 import cors from 'cors';
+import api from './api';
+import { createServer } from 'http';
 
 interface Todo {
   title: string;
@@ -12,21 +14,22 @@ interface Todo {
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use('/api', api);
 
 let todos: Todo[] = [
     { id: 1, title: 'Acheter du lait', color: 'blue', finish: false, deadLine: new Date('2023-04-08') 
     },
-    { id: 2,title: 'Aller à la gym', color: 'red', finish: false, deadLine: new Date('2023-04-10') 
+    { id: 20,title: 'Aller à la gym', color: 'red', finish: false, deadLine: new Date('2023-04-10') 
     },
     { id: 3,title: 'Faire les courses', color: 'green', finish: true, deadLine: new Date('2023-04-15') 
     },
 ];
 
 // GET all todos
-app.get('/todos', (req, res) => {
+app.get('/', (req, res) => {
   res.send(todos);
 });
-
+/*
 // GET todo by id
 app.get('/todos/:id', (req, res) => {
   const id = parseInt(req.params.id);
@@ -65,8 +68,9 @@ app.delete('/todos/:id', (req, res) => {
   todos = todos.filter((todo) => todo.id !== id);
   res.status(204).send();
 });
-
+*/
 const port = 3000;
-app.listen(port, () => {
+const server = createServer(app);
+server.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });

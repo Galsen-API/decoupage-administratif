@@ -1,4 +1,5 @@
 /node_modules
 index.js
-/.api/routes/*.js
-/.api/routes/*.js
+./api/routes/*.js
+./api/services/*.js
+*.js
