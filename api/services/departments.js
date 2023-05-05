@@ -8,16 +8,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DepartmentsService = void 0;
-const jsonfile_1 = __importDefault(require("jsonfile"));
 var DepartmentsService;
 (function (DepartmentsService) {
     function getDepartments() {
-        return jsonfile_1.default.readFile("./api/services/departments.json");
+        const departments = [{ "name": "Pikine", "region_code": 1 }, { "name": "Bambey", "region_code": 3 }];
+        return Promise.resolve(departments);
     }
     DepartmentsService.getDepartments = getDepartments;
     function getDepartmentByName(name) {

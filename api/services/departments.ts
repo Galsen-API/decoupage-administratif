@@ -4,7 +4,9 @@ import { Department } from "../models/department/departments";
 export namespace DepartmentsService {
 
   export function getDepartments(): Promise<Department[]> {
-    return jsonfile.readFile("./api/services/departments.json");
+    const departments = [{"name" : "Pikine","region_code" : 1},{"name" : "Bambey","region_code" : 3}];
+
+    return Promise.resolve(departments);
   }
 
   export async function getDepartmentByName(name: string): Promise<Department | undefined> {
