@@ -11,4 +11,8 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 app.use('/api', api_1.default);
+const port = 3000;
 const server = (0, http_1.createServer)(app);
+server.listen(port, () => {
+    console.log(`Server running`);
+});
