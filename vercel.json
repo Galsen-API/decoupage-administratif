@@ -8,7 +8,7 @@
         { "src": "/(.*)", "dest": "/server.js" },
         {
             "src": "/api/departments",
-            "dest": "/api/index.js"
+            "dest": "/api/routes/departments.js"
         }
     ]
 }
