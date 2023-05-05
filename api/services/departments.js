@@ -14,14 +14,12 @@ const departments_1 = require("../../data/departments");
 var DepartmentsService;
 (function (DepartmentsService) {
     function getDepartments() {
-        //const departments = [{"name" : "Pikine","region_code" : 1},{"name" : "Bambey","region_code" : 3}];
         return Promise.resolve(departments_1.departments);
     }
     DepartmentsService.getDepartments = getDepartments;
     function getDepartmentByName(name) {
         return __awaiter(this, void 0, void 0, function* () {
             const departments = yield getDepartments();
-            console.log(name);
             const department = departments.find((department) => department.name.toLowerCase() === name.toLowerCase());
             if (department) {
                 return department;
