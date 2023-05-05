@@ -10,11 +10,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DepartmentsService = void 0;
+const departments_1 = require("../../data/departments");
 var DepartmentsService;
 (function (DepartmentsService) {
     function getDepartments() {
-        const departments = [{ "name": "Pikine", "region_code": 1 }, { "name": "Bambey", "region_code": 3 }];
-        return Promise.resolve(departments);
+        //const departments = [{"name" : "Pikine","region_code" : 1},{"name" : "Bambey","region_code" : 3}];
+        return Promise.resolve(departments_1.departments);
     }
     DepartmentsService.getDepartments = getDepartments;
     function getDepartmentByName(name) {

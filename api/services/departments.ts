@@ -1,10 +1,11 @@
 import jsonfile from "jsonfile";
 import { Department } from "../models/department/departments";
+import { departments } from "../../data/departments";
 
 export namespace DepartmentsService {
 
   export function getDepartments(): Promise<Department[]> {
-    const departments = [{"name" : "Pikine","region_code" : 1},{"name" : "Bambey","region_code" : 3}];
+    //const departments = [{"name" : "Pikine","region_code" : 1},{"name" : "Bambey","region_code" : 3}];
 
     return Promise.resolve(departments);
   }
