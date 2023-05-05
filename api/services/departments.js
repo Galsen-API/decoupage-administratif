@@ -17,7 +17,7 @@ const jsonfile_1 = __importDefault(require("jsonfile"));
 var DepartmentsService;
 (function (DepartmentsService) {
     function getDepartments() {
-        return jsonfile_1.default.readFile("./departments.json");
+        return jsonfile_1.default.readFile("./api/services/departments.json");
     }
     DepartmentsService.getDepartments = getDepartments;
     function getDepartmentByName(name) {
