@@ -8,8 +8,8 @@ app.use(express.json());
 app.use(cors());
 app.use('/api', api);
 
-/*const port = 3000;
+const port = 3000;
 const server = createServer(app);
 server.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});*/
+  console.log(`Server running`);
+});
