@@ -2,4 +2,4 @@
 .vercel
 .vercelignore
 
-server.js
+*.js
