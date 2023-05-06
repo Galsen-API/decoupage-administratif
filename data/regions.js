@@ -9,6 +9,12 @@ exports.regions = [
         "population": 4042225
     },
     {
+        "name": "Ziguinchor",
+        "code": 2,
+        "superficie": 73399,
+        "population": 437986
+    },
+    {
         "name": "Thies",
         "code": 7,
         "superficie": 6601,
