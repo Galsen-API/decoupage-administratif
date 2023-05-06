@@ -3,4 +3,5 @@
 .vercelignore
 
 /api/*.js
+/api/*/*.js
 *.js
