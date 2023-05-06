@@ -1,7 +1,7 @@
-import { Region } from "../models/region/regions";
-import { regions } from "../../data/regions";
-import { Department } from "../models/department/departments";
-import { departments } from "../../data/departments";
+import { Region } from "../models/region/regions.js";
+import { regions } from "../../data/regions.js";
+import { Department } from "../models/department/departments.js";
+import { departments } from "../../data/departments.js";
 
 export namespace RegionsService {
     

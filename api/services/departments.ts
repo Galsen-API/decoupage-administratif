@@ -1,5 +1,5 @@
-import { Department } from "../models/department/departments";
-import { departments } from "../../data/departments";
+import { Department } from "../models/department/departments.js";
+import { departments } from "../../data/departments.js";
 
 export namespace DepartmentsService {
 

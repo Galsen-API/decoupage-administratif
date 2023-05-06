@@ -1,5 +1,5 @@
 import { Response, Request, Router } from "express";
-import { DepartmentsService } from "../services/departments";
+import { DepartmentsService } from "../services/departments.js";
 
 const router = Router();
 

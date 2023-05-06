@@ -1,5 +1,5 @@
 import { Response, Request, Router } from "express";
-import { RegionsService } from "../services/regions";
+import { RegionsService } from "../services/regions.js";
 
 const router = Router();
 
