@@ -1,5 +1,6 @@
 # decoupage-administratif
 API pour rechercher les régions, les dépatements, ... au Sénégal  
+Les informations sont tirées du site wikipedia.  
 [API ici](https://decoupage-administratif.vercel.app/api/regions)
 
 ## Régions
