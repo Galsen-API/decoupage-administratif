@@ -46,3 +46,25 @@ code : le nom de la région ou le code de la région
 
 ## Départements
 ### `api/departments`
+Retourne la liste de tous les départements.
+<details>
+<summary>Résultats</summary>
+{
+  "name" : "string",
+  "region_code" : number
+},
+</details>
+
+### `api/departments/{name}`
+Retourne un département avec le paramètre code
+<details>
+<summary> Attributs </summary>
+code : le nom du département
+</details>
+<details>
+<summary>Résultats</summary>
+{
+  "name" : "string",
+  "region_code" : number
+},
+</details>
