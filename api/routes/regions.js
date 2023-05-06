@@ -18,14 +18,25 @@ router.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.status(201).send(regions);
 }));
 // Route pour récupérer une région par son nom
-router.get("/:name", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const name = req.params.name;
-    const region = yield regions_1.RegionsService.getRegionByName(name);
+router.get("/:code", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const code = req.params.code;
+    const region = yield regions_1.RegionsService.getRegionByName(code);
     if (region) {
         res.status(202).send(region);
     }
     else {
-        res.status(404).send(`Région avec le nom ${name} est introuvable`);
+        res.status(404).send(`Région avec le nom et/ou code ${code} est introuvable et/ou invalide`);
+    }
+}));
+// Route pour récupérer les départements d'une région
+router.get("/:code/departments", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const code = req.params.code;
+    const departments = yield regions_1.RegionsService.getDepartmentsByRegionName(code);
+    if (departments) {
+        res.status(202).send(departments);
+    }
+    else {
+        res.status(404).send(`Départements de la région avec le nom et/ou code ${code} sont introuvables et/ou invalides`);
     }
 }));
 exports.default = router;
