@@ -1,6 +1,6 @@
 export interface Region {
     name : string,
     code : number,
-    superficie : number,
+    area : number,
     population : number
 }
