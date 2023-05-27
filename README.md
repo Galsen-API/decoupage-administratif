@@ -16,6 +16,13 @@ Retourne la liste de toutes les régions.
 }
 </details>
 
+<details>
+<summary>ERREUR</summary>
+{  
+  "message" : "message d'erreur"
+}
+</details>
+
 ### `decoupage-administratif/regions/{code}`
 Retourne une région avec le paramètre code
 <details>
@@ -29,6 +36,13 @@ code : le nom de la région ou le code de la région
   "code" : number,
   "area" : number, en km²
   "population" : number
+}
+</details>
+
+<details>
+<summary>ERREUR</summary>
+{  
+  "message" : "message d'erreur"
 }
 </details>
 
@@ -46,6 +60,13 @@ code : le nom de la région ou le code de la région
 },
 </details>
 
+<details>
+<summary>ERREUR</summary>
+{  
+  "message" : "message d'erreur"
+}
+</details>
+
 ## Départements
 ### `decoupage-administratif/departments`
 Retourne la liste de tous les départements.
@@ -55,6 +76,13 @@ Retourne la liste de tous les départements.
   "name" : "string",
   "region_code" : number
 },
+</details>
+
+<details>
+<summary>ERREUR</summary>
+{  
+  "message" : "message d'erreur"
+}
 </details>
 
 ### `decoupage-administratif/departments/{name}`
@@ -69,4 +97,11 @@ code : le nom du département
   "name" : "string",
   "region_code" : number
 },
+</details>
+
+<details>
+<summary>ERREUR</summary>
+{  
+  "message" : "message d'erreur"
+}
 </details>
