@@ -4,7 +4,7 @@ Les informations sont tirées du site wikipedia.
 [API ici]([https://decoupage-administratif.vercel.app/api/regions](https://api.idrissa-sall.com/decoupage-administratif/regions))
 
 ## Régions
-### `api/regions`
+### `decoupage-administratif/regions`
 Retourne la liste de toutes les régions.
 <details>
 <summary>Résultats</summary>
@@ -16,7 +16,7 @@ Retourne la liste de toutes les régions.
 }
 </details>
 
-### `api/regions/{code}`
+### `decoupage-administratif/regions/{code}`
 Retourne une région avec le paramètre code
 <details>
 <summary> Attributs </summary>
@@ -32,7 +32,7 @@ code : le nom de la région ou le code de la région
 }
 </details>
 
-### `api/regions/{code}/departments`
+### `decoupage-administratif/regions/{code}/departments`
 Retourne la liste de tous les département de la région avec le code
 <details>
 <summary> Attributs </summary>
@@ -47,7 +47,7 @@ code : le nom de la région ou le code de la région
 </details>
 
 ## Départements
-### `api/departments`
+### `decoupage-administratif/departments`
 Retourne la liste de tous les départements.
 <details>
 <summary>Résultats</summary>
@@ -57,7 +57,7 @@ Retourne la liste de tous les départements.
 },
 </details>
 
-### `api/departments/{name}`
+### `decoupage-administratif/departments/{name}`
 Retourne un département avec le paramètre code
 <details>
 <summary> Attributs </summary>
