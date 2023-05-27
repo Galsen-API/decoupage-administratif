@@ -11,7 +11,7 @@ Retourne la liste de toutes les régions.
 {  
   "name" : "string",  
   "code" : number,
-  "area" : number,
+  "area" : number, en km²
   "population" : number
 }
 </details>
@@ -27,7 +27,7 @@ code : le nom de la région ou le code de la région
 {  
   "name" : "string",  
   "code" : number,
-  "area" : number,
+  "area" : number, en km²
   "population" : number
 }
 </details>
