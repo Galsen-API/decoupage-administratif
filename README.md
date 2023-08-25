@@ -105,3 +105,9 @@ code : le nom du département
   "message" : "message d'erreur"
 }
 </details>
+
+## Utilisation en local
+- Cloner le projet
+- Installer les dépendances avec `npm install`
+- Compiler en js avec `npx tsc`
+- Lancer le serveur avec `node .\build\server.js` ou `npm start`
